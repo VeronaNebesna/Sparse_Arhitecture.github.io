@@ -30,7 +30,10 @@ const Main = () =>{
                 )}/>
                 <Route path ="/category" render ={()=>(
                         <CategoryPage/> 
-                    )}/>         
+                    )}/>       
+
+                    
+                      
         </div>
     )
 }
