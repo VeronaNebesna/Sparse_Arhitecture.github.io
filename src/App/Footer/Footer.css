@@ -1,0 +1,164 @@
+/* ----------------------------------------- F O O T E R ----------------------------------*/
+
+.footer_section{
+    background: url(back_3.png) no-repeat 50% 50%;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: -10;
+}
+.footer_dark_section{
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.footer_row{
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+/* --------list------- */
+.list p, .newsletter_column p{
+    color: rgb(255,255,255);
+    font-size:20px;
+    margin-top:50px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.list ul li, .newsletter_column span{
+    color:rgb(143, 143, 143);
+    padding:10px 0;
+    display:block;
+    font-weight: 300;
+    text-align: center;
+    cursor: pointer;
+}
+.list ul li:hover{
+    color: rgb(249,205,63);
+}
+/* ----email----- */
+.email_btn{
+    width: 100%;
+    position: relative;
+}
+.email_btn p{
+    margin:35px 0 ;
+}
+.email_btn input{
+    height: 40px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.1);
+    border:none;
+    padding-left:10px;
+    color:rgb(255, 255, 255);
+}
+.email_send{
+    position: absolute;
+    right:0;
+    width: 40px;
+    height: 40px;
+    border:none;
+    background-color: rgb(249,205,63);
+    cursor: pointer;
+}
+.email_btn input:focus{
+    outline: none;
+} 
+
+/* -------links footer-------- */
+.copyright_ftr p{
+    color: rgb(143, 143, 143);
+    font-weight: 300;
+    text-align:center;
+}
+.links_footer{
+    display: flex;
+    color:rgb(143, 143, 143);
+    justify-content: space-around;
+    margin-top:20px
+}
+.links_footer > div:hover{
+    color:rgb(249,205,63);
+    cursor: pointer;
+}
+
+/* -------arrow up------ */
+.arrow_up{
+    position: fixed;
+    bottom:0;
+    right:0;
+    color:rgba(0, 0, 0);
+    background-color: rgba(38,37,51,0.5);
+    cursor: pointer;
+}
+.arrow_up:hover{
+    background-color: rgb(38,37,51);
+    color:rgb(249,205,63);
+}
+.arrow_up i{
+    font-size: 50px;
+    padding:5px 15px;
+}
+.button_write_to_us{
+    width:150px;
+    height: 40px;
+    background-color:rgba(0, 0, 0, 0);
+    border:1px solid rgb(249,205,63);
+    margin:30px auto;
+}
+.button_write_to_us .write_to_us{
+    color:rgb(249,205,63);
+    font-size:20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding:10px
+}
+.write_to_us i{
+    font-size:17px;
+}
+.modal{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,.5);
+    display: flex;
+    justify-content:center;
+    padding-top:100px
+}
+.modal-body{
+    padding:30px;
+    width: 500px;
+    border-radius: 5px;
+    background:  rgb(38,37,51);
+    height: 250px;
+    position: relative;
+}
+.close_modal{
+    position: absolute;
+    top:20px;
+    right: 20px;
+    color:rgb(255,255,255);
+    cursor:pointer;
+}
+.close_modal:hover{
+    color:rgb(249,205,63)
+}
+@media(min-width:768px){
+    .copyright_ftr p{
+        text-align:start;
+    }
+    .links_footer{
+        margin-top:0px;
+    }
+    .email_btn input{
+        width: 400px;
+    }
+}
+
+
+@media(min-width:992px){
+    .email_btn input{
+        width: 430px;
+    }
+}

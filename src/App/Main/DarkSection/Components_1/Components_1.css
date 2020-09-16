@@ -1,0 +1,91 @@
+/* ---------img------------- */
+.img_section_dark{
+    margin-top:70px;
+    position: relative;
+    margin-bottom: 50px;
+}
+.img_section_dark img{
+    width:100%;
+   
+}
+.description_photo{
+    font-family: 'Oswald', sans-serif;
+    width: 100px;
+    height: 115px;
+    padding:15px;
+    background-color: rgb(249,205,63);
+    position: absolute;
+    bottom: 40px;
+    left:40px;
+    text-align: center;
+    cursor: pointer;
+}
+.description_photo p.number{
+    font-size: 30px;
+    font-weight:600;
+    padding-top:5px;
+    padding-bottom: 10px;
+}
+.description_photo p{
+    line-height: 25px;
+    font-size: 13px;
+}
+
+
+
+@media(min-width:768px){
+    /* ----logo-------- */
+    .logo img{
+        width: 80px;
+        height: 80px;
+    }
+    /* ----mobile menu------ */
+    .mobile-menu_fixed{
+        padding:25px;
+    }
+    .navigation{
+        min-width: 30%;
+    }
+    /* ----section#1----- */
+    .about_our_company{
+        margin:50px 0;
+    }
+}
+
+
+/* ----Laptop------- */
+@media(min-width:992px){
+      /* ---logo----- */
+      .logo img{
+        width: 90px;
+        height: 90px;
+    }
+    /* ----mobile_menu------ */
+    .mobile-menu_fixed{
+        padding:30px;
+    }
+    /* about company img */
+    .description_photo{
+        bottom: 50px;
+        left:50px;
+    }
+    .btn_estimate {
+        margin-top:75px;
+    }
+}
+
+
+/* ----Desktop------- */
+@media(min-width:1200px){
+    /* about company */
+    .about_our_company{
+        margin-top:50px
+    }
+    .navigation{
+        min-width: 20%;
+    }
+    .description_photo{
+        bottom: 60px;
+        left:60px;
+    }
+}

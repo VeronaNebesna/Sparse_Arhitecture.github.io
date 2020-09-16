@@ -1,0 +1,100 @@
+/* ----------------------------- SLIDER  -----------------------------*/
+.slider_img .owl-dots{
+    position: absolute;
+    left:50%;
+    transform: translate(-50%,-50%);
+    bottom:20px;
+}
+.owl-carousel .owl-item img{
+    width:auto;
+    height: 600px;
+}
+.owl-dots{
+    width: 150px;
+}
+.owl-carousel button.owl-dot:focus{
+    outline:none
+}
+.owl-carousel .owl-dots .owl-dot span{
+    width: 50px;
+    height: 3px;
+    background-color: #34343c;
+    display: inline-block;
+}
+.owl-carousel .owl-dots .owl-dot.active span{
+    background: rgb(249,205,63);
+    height: 5px;
+    border-radius: 5px;
+}
+.owl-carousel .owl-dots .owl-dot span:hover{
+    background-color: #626264;
+}
+/* --------div in slider--------- */
+.content_slider{
+    font-family: 'Roboto', sans-serif;
+    width:250px;
+    min-height: 250px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    padding:40px;
+}
+.content_slider p.title_content_slider{
+    text-align: center;
+    display: block;
+    font-size:30px;
+    font-weight: 300;
+    color:rgb(255, 255, 255);
+    margin-bottom: 20px;
+    line-height: 35px;
+}
+.content_slider > p{
+    color:rgb(153, 147, 147);
+    font-weight: 300;
+    line-height: 25px;
+    font-size:15px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+/* ------btn more details------ */
+.btn_det{
+    width: 100%;
+    text-align: center;
+}
+.details{
+    width:100px;
+    height: 40px;
+    background-color: rgba(38,37,51,0);
+    border:2px solid rgb(255, 255, 255);
+    color:rgb(255,255,255);
+    text-transform: uppercase;
+    cursor: pointer;
+    position: relative;
+}
+.details:before, .details:after{
+    content: "";
+    width: 20px;
+    height: 2px;
+    background-color: rgb(255, 255, 255);
+    display: block;
+    position: absolute;
+}
+.details:after{
+    right:-20px;
+    top:50%;
+}
+.details:before{
+    left:-20px;
+    top:50%;
+}
+.details:hover{
+    background-color: rgb(249,205,63);
+    color:rgb(0, 0, 0);
+    transition: .5s;
+    border-color: rgb(249,205,63);
+}
+.details:hover:before,.details:hover:after {
+    background-color: rgb(249,205,63);
+    transition: .5s;
+}

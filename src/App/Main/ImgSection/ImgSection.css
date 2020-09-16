@@ -1,0 +1,84 @@
+/* -------------------------- I M G  S E C T I O N  portfolio--------------------------*/
+
+
+.img_section{
+    /* background-color: rgb(249,205,63); */
+    background: url(night_city.jpg) no-repeat 50% 50%;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Oswald', sans-serif;
+}
+.blur{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.estimate_block{
+    margin-top:90px;
+    margin-bottom: 30px;
+    padding:50px;
+}
+.title_estimate{
+    font-size:42px;
+    line-height: 60px;
+    font-weight: 300;
+    color: rgb(249,205,63);
+}
+.content_estimate{
+    padding-top: 20px;
+    font-weight: 400;
+    color: rgb(249,205,63);
+    line-height: 25px;
+}
+/* -----btn----- */
+.btn_estimate {
+    text-align: center;
+}
+.btn_estimate button{
+    width: 130px;
+    height: 45px;
+    background-color: rgba(29, 33, 36,1);
+    border:2px solid rgb(23, 26, 29);
+    color:rgb(255, 255, 255);
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+    position: relative;
+    cursor: pointer;
+    margin-bottom: 40px;
+}
+.btn_estimate button:after, .btn_estimate button:before{
+    content: "";
+    display: block;
+    width: 20px;
+    height: 2px;
+    position: absolute;
+    background-color: rgb(23, 26, 29);
+}
+.btn_estimate button:after{
+    top:50%;
+    right:-20px;
+}
+.btn_estimate button:before{
+    top:50%;
+    left:-20px;
+}
+.btn_estimate button:hover{
+    background-color: rgba(29, 33, 36,0);
+    border-color:rgb(255, 255, 255);
+    color:rgb(255, 255, 255);
+    transition: .5s all ease-in-out;
+}
+.btn_estimate button:hover:after, .btn_estimate button:hover:before{
+    background-color: rgb(255, 255, 255);
+}
+
+/* ----Laptop------- */
+@media(min-width:992px){
+     /* about company img */
+     .description_photo{
+        bottom: 50px;
+        left:50px;
+    }
+    .btn_estimate {
+        margin-top:75px;
+    }
+}

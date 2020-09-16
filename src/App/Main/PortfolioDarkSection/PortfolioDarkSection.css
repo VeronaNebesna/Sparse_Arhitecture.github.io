@@ -1,0 +1,88 @@
+/* -------------------------- D A R K  S E C T I O N  2  PORTFOLIO--------------------------*/
+.yellow_line{
+    width: 100px;
+    height: 2px;
+    background-color: rgb(249,205,63);
+    margin-top:30px;
+}
+.pic_portfolio img{
+    max-width: 100%;
+}
+.pic_portfolio{
+    margin-bottom: 30px;
+}
+.desc_portfolio{
+    font-family: 'Oswald', sans-serif;
+}
+.headline_desc_portfolio{
+    text-transform: uppercase;
+    color:rgb(249,205,63);
+    font-weight: 500;
+    font-size: 12px;
+    position: relative;
+    padding-left:30px;
+}
+.headline_desc_portfolio:before{
+    content: "";
+    width: 20px;
+    height: 2px;
+    display: block;
+    position: absolute;
+    left:0;
+    top:50%;
+    background-color: rgb(249,205,63);
+}
+.title_portfolio p:first-child{
+    color: rgb(255, 255, 255);
+    font-size: 33px;
+    font-weight: 300;
+    line-height: 50px;
+    padding: 25px 0;
+}
+.title_portfolio p:last-child{
+    color:rgb(143, 143, 143);
+    line-height: 25px;
+    font-weight: 300;
+    padding-bottom: 30px;
+}
+
+/* ---button "load more"------ */
+.btn_load_more{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn_load_more button{
+    width: 185px;
+    height: 40px;
+    text-transform:uppercase;
+    border:2px solid rgb(255, 255, 255);
+    background-color:rgba(0,0,0,0);
+    color:rgb(255, 255, 255);
+    font-size:12px;
+    font-weight: 600;
+    position: relative;
+    cursor:pointer;
+}
+.btn_load_more button:after,.btn_load_more button:before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 2px;
+    position: absolute;
+    background-color:rgb(255, 255, 255);
+}
+.btn_load_more button:after{
+    top:50%;
+    right:-20px;
+}
+.btn_load_more button:before{
+    top:50%;
+    left:-20px;
+}
+.btn_load_more button:hover:after,.btn_load_more button:hover:before, .btn_load_more button:hover{
+    background-color: rgb(249,205,63);
+    color:rgb(0, 0, 0);
+    border-color: rgb(249,205,63);
+    transition: .5s all ease-in-out;
+}

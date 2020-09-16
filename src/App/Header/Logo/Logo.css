@@ -1,0 +1,12 @@
+/* ----------------------- LOGO -----------------------------*/
+.logo{
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: 10;
+    cursor: pointer;
+}
+.logo img{
+    width: 70px;
+    height: 70px;
+}

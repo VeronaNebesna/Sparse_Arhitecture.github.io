@@ -1,0 +1,16 @@
+*{
+    box-sizing: border-box;
+}
+@font-face{
+    font-family: 'Oswald', sans-serif;
+    src:url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap" );
+}
+@font-face{
+    font-family: 'Roboto', sans-serif;
+    src:url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap")
+
+}
+body{
+    background-color:rgb(38,37,51);
+    font-family: 'Roboto', sans-serif;
+}
