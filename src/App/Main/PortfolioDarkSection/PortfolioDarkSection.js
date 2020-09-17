@@ -8,6 +8,9 @@ import "./PortfolioDarkSection.css"
 
 class PortfolioDarkSection extends Component{
     render(){
+        const{
+            changeCategory
+        } = this.props
         return(
             <div>
                 <section class = "dark_section">
@@ -17,7 +20,8 @@ class PortfolioDarkSection extends Component{
                                 <TitlePortfolioSection/>
                             </div>
                         </div>
-                             <ContentPortfolio/>
+                            <ContentPortfolio
+                                changeCategory={ changeCategory}/>
                         <div class="row dark_row content_row ">
                             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                                 <div class="btn_load_more">

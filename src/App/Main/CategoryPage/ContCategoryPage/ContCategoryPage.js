@@ -1,5 +1,5 @@
-import React from "react"
-import Comments from "./Comments"
+import React, { Fragment } from "react"
+// import Comments from "./Comments"
 
 
 
@@ -8,11 +8,11 @@ const ContCategoryPage = ({
     id,
     img,
     p1,
-    p2,
     headline,
 }) =>{
     return(
-        <div className="row_category" key={id}>
+        <Fragment>
+        <div className="row_category" key={id}>  
             <div className="col-xs-12 col-sm-12 col-md-5 col-lg-5">
                 <div className="title_port_category">
                     <p>{p1}</p>
@@ -27,13 +27,13 @@ const ContCategoryPage = ({
                     <div className="data_post">{headline}</div>
                     <div className ="views_post"> <i className="far fa-eye"></i> 50+ Views</div>
                     <div className ="user_post"><i class="far fa-user"></i>Mishell</div>
-                    <Comments/>
+                    {/* <Comments/> */}
                 </div>
             </div>
-     </div>
-    
-        
+     </div> 
+    </Fragment> 
     )
 }
+
 
 export default ContCategoryPage

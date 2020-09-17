@@ -3,7 +3,9 @@ import ContentPortfolioItems from "./ContentPortfolioItems"
 import ContentData from "./ContentData"
 
 
-const ContentPortfolio = (
+const ContentPortfolio = ({
+    changeCategory
+}
 ) =>{
     return(
         <Fragment>
@@ -16,14 +18,13 @@ const ContentPortfolio = (
                    headline,
                    category
                })=>(
-                   
                 <ContentPortfolioItems
+                    changeCategory={ changeCategory}
                     img={img}
                     id={id}
                     p1={p1}
                     p2={p2}
                     headline={headline}
-                    category={category}
                 />
                ))
             }

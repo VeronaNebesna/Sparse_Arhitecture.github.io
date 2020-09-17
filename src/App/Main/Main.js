@@ -9,8 +9,10 @@ import SliderFeddback from "./SliderFeedback/SliderFeedback"
 import Slider from "../Header/Slider/Slider"
 
 
-const Main = () =>{
-    // console.log(rendComp[0])
+const Main = ({
+    articleCategory,
+    changeCategory
+}) =>{
     return(
         <div>
             <Route  path="/" exact render ={()=>(
@@ -20,7 +22,8 @@ const Main = () =>{
                      <DarkSection/>
                 )}/>
                 <Route path = "/" exact render={()=>(
-                    <PortfolioDarkSection/>
+                    <PortfolioDarkSection
+                        changeCategory={ changeCategory}/>
                 )}/>
                 <Route path = "/" exact render={()=>(
                     <ImgSection/>
@@ -29,11 +32,11 @@ const Main = () =>{
                     <SliderFeddback/>
                 )}/>
                 <Route path ="/category" render ={()=>(
-                        <CategoryPage/> 
-                    )}/>       
-
-                    
-                      
+                        <CategoryPage
+                            articleCategory={articleCategory}
+                            
+                        /> 
+                    )}/>            
         </div>
     )
 }

@@ -53,7 +53,9 @@
 .row_category{
     display: flex;
     flex-direction: column;
-    margin: 25px 0;
+    margin-top: 25px;
+    margin-bottom: 50px;
+
 }
 .title_port_category p:first-child{
     font-size:40px;
@@ -79,7 +81,7 @@
     align-items: center;
 }
 .category_bottom div{
-    padding:15px;
+   margin-top:15px;
     cursor:pointer;
 }
 .category_bottom div:hover{
@@ -109,7 +111,12 @@
 .views_post, .user_post,.comment_post{
     color:rgb(249,204,65);
 }
-
+.name_of_category{
+    color:rgb(255, 255, 255);
+    text-align: center;
+    font-size: 35px;
+    padding-top: 50px;
+}
 @media(min-width:992px){
     .row_category{
         flex-direction: row;
@@ -125,9 +132,13 @@
         width:90%;
         padding-top: 30px;
     }    
+   
 }
 @media(min-width:1200px){
     .category_bottom{
         margin-top:30px
+    }
+    .name_of_category{
+        font-size: 40px;
     }
 }
