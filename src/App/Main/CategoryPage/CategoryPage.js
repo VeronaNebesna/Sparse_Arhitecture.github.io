@@ -26,12 +26,9 @@ const CategoryPage = ({
             <div className ="header_img">
                 <div className = "blog">
                     <p>Blog</p>
-                    <button><Link to="/" className="link">Home</Link> | <Link to="/category" className="link" >Blog</Link></button>
+                    <button className="button_category"><Link to="/" className="link">Home</Link> | <div className="link" >Category: {valueOfCategory}</div></button>
                 </div>
             </div>
-            <div className="col-xs-12 col-sm-12 col-lg-12 col-md-12">
-                <p className="name_of_category"> Category: {valueOfCategory}</p>
-
                 {ContentData.map(function(categoryId){
                     if(categoryId.category == valueOfCategory){
                         return(
@@ -46,9 +43,7 @@ const CategoryPage = ({
                     }
                         
                 }    
-                )}
-                      
-            </div>            
+                )}          
         </div>
     )
 }
