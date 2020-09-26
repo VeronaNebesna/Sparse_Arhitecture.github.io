@@ -1,6 +1,8 @@
-import { render } from "@testing-library/react"
-import React, { Fragment } from "react"
+// import { render } from "@testing-library/react"
+import React, { useEffect } from "react"
 import AliceCarousel from "react-alice-carousel"
+import Aos from "aos"
+
 import "react-alice-carousel/lib/alice-carousel.css"
 import img1 from "./port1.jpg"
 import img2 from "./port2.jpg"
@@ -11,8 +13,13 @@ import "./SliderFeedback.css"
 
 
 const SliderFeedback = () =>{
+    useEffect(()=>{
+        Aos.init({
+            duration:3000
+        })
+        }, [])  
         return(
-            <section class = "dark_section">
+            <section class = "dark_section" data-aos="fade">
                 <div class="container">
                     <div class="row dark_row content_row">
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">

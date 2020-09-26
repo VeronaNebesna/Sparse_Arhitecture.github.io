@@ -1,6 +1,5 @@
 import React, {useEffect} from "react"
 import Aos from "aos"
-import "aos/dist/aos.css"
 import "./Components_2.css"
 
 const Component_2 = () => {
@@ -11,7 +10,7 @@ const Component_2 = () => {
     }, []);  
     return(
         <div>
-             <div className="about_our_company" data-aos="fade-up-left">
+             <div className="about_our_company" data-aos="slide-left">
                 <div className="column_caption">
                     <p className="title">about our company</p>
                     <p className="subtitle">We've been creating <br/>Awesome Since 1992</p>

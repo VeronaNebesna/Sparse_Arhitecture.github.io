@@ -1,6 +1,6 @@
-import React from "react"
+import React, {useEffect} from "react"
 import {Link} from "react-router-dom"
-
+import Aos from "aos"
 
 
 
@@ -15,8 +15,14 @@ const ContentPortfolioItems = ({
     like,
     changeLikedBtn,
 }) =>{
+    useEffect(()=>{
+    Aos.init({
+        duration:3000
+    })
+    }, [])  
     return(
-        <div  className = { id%2===0 ? "row dark_row content_row reverse_row" :"row dark_row content_row"}>
+        <div  className = { id%2===0 ? "row dark_row content_row reverse_row" :"row dark_row content_row"}
+        data-aos= {id%2===0 ? "fade-up-left" : "fade-up-right" }>
             <div className="col-xs-12 col-sm-7 col-md-7 col-lg-7">
                 <div className="pic_portfolio">
                     <img src={img}  alt=""/>

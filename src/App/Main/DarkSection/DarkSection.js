@@ -3,6 +3,8 @@ import React from "react"
 import Components_1 from "./Components_1/Components_1"
 import Components_2 from "./Components_2/Components_2"
 import AchivementList from "./AchivementList/AchivementList"
+import "aos/dist/aos.css"
+
 
 const DarkSection = () =>{
     return(
