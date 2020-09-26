@@ -6,22 +6,27 @@ import "./PortfolioDarkSection.css"
 
 
 
-class PortfolioDarkSection extends Component{
-    render(){
-        const{
-            changeCategory
-        } = this.props
+const PortfolioDarkSection=({
+    changeCategory,
+    like,
+    changeLikedBtn,
+})=>{
         return(
             <div>
                 <section class = "dark_section">
                     <div class="container">
                         <div class="row dark_row">
                             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                                <TitlePortfolioSection/>
+                                    <TitlePortfolioSection
+                                    like={like}
+                                   />  
                             </div>
                         </div>
                             <ContentPortfolio
-                                changeCategory={ changeCategory}/>
+                                changeCategory={ changeCategory}
+                                like={like}
+                                changeLikedBtn={changeLikedBtn}
+                                />
                         <div class="row dark_row content_row ">
                             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                                 <div class="btn_load_more">
@@ -34,6 +39,6 @@ class PortfolioDarkSection extends Component{
             </div>
         )
     }
-}
+
 
 export default PortfolioDarkSection

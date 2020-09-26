@@ -13,6 +13,9 @@
     line-height: 60px;
     font-weight: 300;
     margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .text_column p {
@@ -22,6 +25,7 @@
     font-weight: 300;
 }
 /* --------- btn ------------- */
+
 .btn_read_more {
     display:flex;
     flex-direction: column;
@@ -66,9 +70,14 @@
     color:rgb(146, 141, 141);
     transition: all ease-in-out 1s;
 }
-
+@media (min-width:768px){
+    .subtitle{
+        flex-direction: row;
+    }
+}
 @media (min-width:992px){
     .btn_read_more{
         flex-direction: row;
     }
 }
+

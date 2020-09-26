@@ -10,7 +10,10 @@ import "./Reset.css"
 class App extends Component{
   state={
     articleCategory:{
-    }
+    },
+    likedPosts:{
+      
+    },
   }
 
   changeCategory = (categoryId, category) =>{
@@ -21,13 +24,25 @@ class App extends Component{
     }))
   } 
 
+  changeLikedBtn=(id)=>{
+    this.setState( (prevState)=>({
+      likedPosts:{
+        ...prevState.likedPosts,
+        [id]:!prevState.likedPosts[id],
+      }
+    }))
+  }
+
     render(){
+      console.log(this.state.likedPosts)
       return(
         <div>
           <Header/>
           <Main
               articleCategory={this.state.articleCategory}
               changeCategory={this.changeCategory}
+              like={this.state.likedPosts}
+              changeLikedBtn={this.changeLikedBtn}
           />
           <Footer/>
         </div>

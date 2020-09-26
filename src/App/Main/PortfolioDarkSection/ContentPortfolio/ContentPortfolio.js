@@ -4,7 +4,9 @@ import ContentData from "./ContentData"
 
 
 const ContentPortfolio = ({
-    changeCategory
+    changeCategory,
+    like,
+    changeLikedBtn
 }
 ) =>{
     return(
@@ -16,7 +18,7 @@ const ContentPortfolio = ({
                    p1,
                    p2,
                    headline,
-                   category
+                   category,      
                })=>(
                 <ContentPortfolioItems
                     changeCategory={ changeCategory}
@@ -25,8 +27,9 @@ const ContentPortfolio = ({
                     p1={p1}
                     p2={p2}
                     headline={headline}
-                    category={category}
-                    
+                    category={category}  
+                    like={like}
+                    changeLikedBtn={changeLikedBtn}
                 />
                ))
             }

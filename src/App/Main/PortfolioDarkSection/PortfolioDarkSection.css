@@ -21,6 +21,9 @@
     font-size: 12px;
     position: relative;
     padding-left:30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .headline_desc_portfolio:before{
     content: "";
@@ -45,7 +48,36 @@
     font-weight: 300;
     padding-bottom: 30px;
 }
+.like{
+    font-size: 25px;
+    cursor: pointer;
+}
+.liked_post_btn button{
+    width:150px;
+    height: 40px;
+    font-weight:600;
+    background-color: rgba(0,0,0,0);
+    border:1px solid rgb(249,205,63);
+   
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.liked_post_btn button a{
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    color:rgb(249,205,63); 
+}
 
+.liked_post_btn button:hover{
+    background-color: rgb(249,205,63);
+    border:1px solid rgba(0,0,0,0);
+    
+    transition: .5s;
+}
+.liked_post_btn button a:hover{
+    color:rgb(0,0,0);
+}
 /* ---button "load more"------ */
 .btn_load_more{
     display: flex;

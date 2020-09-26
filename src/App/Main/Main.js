@@ -5,13 +5,15 @@ import DarkSection from "./DarkSection/DarkSection"
 import PortfolioDarkSection from "./PortfolioDarkSection/PortfolioDarkSection"
 import ImgSection from "./ImgSection/ImgSection"
 import SliderFeddback from "./SliderFeedback/SliderFeedback"
-
+import LikedArticle from "../Components/LikedArticle/LikedArticle"
 import Slider from "../Header/Slider/Slider"
 
 
 const Main = ({
     articleCategory,
-    changeCategory
+    changeCategory,
+    like,
+    changeLikedBtn,
 }) =>{
     return(
         <div>
@@ -23,7 +25,10 @@ const Main = ({
                 )}/>
                 <Route path = "/" exact render={()=>(
                     <PortfolioDarkSection
-                        changeCategory={ changeCategory}/>
+                        changeCategory={ changeCategory}
+                        like={like}
+                        changeLikedBtn={changeLikedBtn}
+                     />
                 )}/>
                 <Route path = "/" exact render={()=>(
                     <ImgSection/>
@@ -33,10 +38,14 @@ const Main = ({
                 )}/>
                 <Route path ="/category" render ={()=>(
                         <CategoryPage
-                            articleCategory={articleCategory}
-                            
+                            articleCategory={articleCategory} 
                         /> 
-                    )}/>            
+                    )}/> 
+                 <Route path="/liked_post" render={()=>(
+                     <LikedArticle
+                        like={like}
+                        />
+                 )}/>          
         </div>
     )
 }

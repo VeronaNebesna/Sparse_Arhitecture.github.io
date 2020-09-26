@@ -11,7 +11,9 @@ const ContentPortfolioItems = ({
     p1,
     p2,
     category,
-    changeCategory
+    changeCategory,
+    like,
+    changeLikedBtn,
 }) =>{
     return(
         <div  className = { id%2===0 ? "row dark_row content_row reverse_row" :"row dark_row content_row"}>
@@ -24,6 +26,10 @@ const ContentPortfolioItems = ({
                 <div className="desc_portfolio">
                     <div className="headline_desc_portfolio">
                         <p>{headline}</p>
+                        <p className="like" onClick={()=>changeLikedBtn(id)}> {
+                            like[id] ?  <i class="fas fa-heart"></i> : <i class="far fa-heart"></i>                           
+                        }
+                        </p>
                     </div>
                     <div className="title_portfolio">
                         <p>{p1}</p>
