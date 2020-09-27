@@ -1,5 +1,4 @@
 import React, {Component} from "react"
-import ReactDOM from "react-dom"
 import "./Footer.css"
 
 
@@ -17,23 +16,18 @@ class FooterEmail extends Component{
             isOpen:false
         })
     }
-//    handleClickOutSide = (event)=>{
-//        const wrapperRef = React.createRef();
-//        if(this.wrapperRef && !this.wrapperRef.current.contains(event.target)){
-//            console.log("close")
-//        }
-//    }
+
  
 wrapperRef = React.createRef()
 
 handleClickOutside = (event) => {
-
     if (this.wrapperRef.current === event.target) {
         this.closeModalWindow()
     }
     
 }
    render(){
+       console.log(this.wrapperRef)
     return(
         <div class="col-xs-12 col-sm-8 col-md-4 col-lg-4">
             <div class="newsletter_column">
