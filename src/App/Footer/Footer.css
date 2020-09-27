@@ -142,7 +142,8 @@
     cursor:pointer;
 }
 .close_modal:hover{
-    color:rgb(249,205,63)
+    color:rgb(249,205,63);
+    font-size:20px;
 }
 @media(min-width:768px){
     .copyright_ftr p{
