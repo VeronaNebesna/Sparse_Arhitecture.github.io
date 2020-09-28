@@ -1,4 +1,4 @@
-import React from "react"
+import React, {Component} from "react"
 import "./Footer.css"
 import FooterData from "./FooterData"
 import FooterItems from "./FooterItems"
@@ -6,8 +6,16 @@ import FooterEmail from "./FooterEmail"
 import FooterLinks from "./FooterLinks"
 
 
-const Footer = () =>{
-    return(
+class Footer extends Component {
+
+    scrollToTop =()=>{
+       window.scrollTo({
+           top:0,
+           behavior:"smooth"
+       })
+    }
+    render(){
+         return(
         <footer className="footer_section">
             <div className="footer_dark_section">
                 <div className="container">
@@ -37,12 +45,14 @@ const Footer = () =>{
                    <FooterLinks/>
                 </div>
            
-                <div class="arrow_up">
-                    <div><i class="fas fa-angle-up"></i></div>
+                <div class="arrow_up" onClick={()=>this.scrollToTop()}>
+                    <i class="fas fa-angle-up"></i>
                 </div>
                 </div>
         </footer>
     )
+    }
+   
 }
 
 export default Footer
