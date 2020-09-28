@@ -1,0 +1,37 @@
+.headline_of_the_items_of_list{
+    text-align:center;
+    font-size: 30px;
+    color: rgb(249,204,65);
+    margin-bottom: 50px;
+}
+.architects_team{
+    color: rgb(249,204,65);
+    font-size: 20px;
+    margin: 15px 0;
+}
+.architects_team span{
+    color:rgb(255,255,255);
+    font-size:17px;
+}
+.architects_team i{
+    padding: 0 15px;
+    font-size: 20px;
+}
+.description_item_extended{
+    margin-bottom:20px;
+}
+.description_item_extended p{
+    color:rgb(255,255,255);
+    line-height: 30px;
+    font-size:20px;
+    padding:15px;
+    text-indent: 30px;
+}
+/* Tablet */
+@media(min-width:1200px){
+    .pic_portfolio img {
+       margin:0 auto;
+       display: block;
+       width: 100%;
+    }
+}

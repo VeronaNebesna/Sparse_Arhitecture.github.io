@@ -27,8 +27,7 @@ handleClickOutside = (event) => {
     
 }
    render(){
-       console.log(this.wrapperRef)
-    return(
+     return(
         <div class="col-xs-12 col-sm-8 col-md-4 col-lg-4">
             <div class="newsletter_column">
                 <p>Newsletter</p>

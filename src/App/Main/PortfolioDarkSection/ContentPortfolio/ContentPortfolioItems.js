@@ -42,7 +42,7 @@ const ContentPortfolioItems = ({
                         <p>{p2}</p>
                     </div>
                     <div className="btn_read_more" key={id}>
-                        <button>Read more</button>
+                        <button><Link to={`/read_more_about/${id}`}>Read more </Link></button>
                         <div className="category_name">
                             Category: 
                             <Link  to="/category" onClick={()=> changeCategory(id,category)}>{category}</Link>           

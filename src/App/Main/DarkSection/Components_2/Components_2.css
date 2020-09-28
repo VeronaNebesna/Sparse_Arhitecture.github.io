@@ -41,6 +41,15 @@
     position: relative;
     cursor: pointer;
 }
+.btn_read_more button > a{
+    text-decoration: none;
+    color:rgb(255, 255, 255); 
+    display: block;
+    padding:10px;
+}
+.btn_read_more button >  a:hover{
+    color:rgb(0, 0, 0); 
+}
 .btn_read_more button:after{
     content: "";
     position: absolute;

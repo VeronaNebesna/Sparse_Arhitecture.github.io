@@ -1,16 +1,17 @@
 import React from "react"
 import {keys} from "lodash"
 import  {Link} from "react-router-dom"
-import ContentData from "../../Main/PortfolioDarkSection/ContentPortfolio/ContentData"
+import ContentData, {getCategoryMap} from "../../Main/PortfolioDarkSection/ContentPortfolio/ContentData"
 import ContCategoryPage from "../../Main/CategoryPage/ContCategoryPage/ContCategoryPage"
 
-const mapId = ContentData.reduce( (accMap, currentValue) =>({
-    ...accMap,
-    [currentValue.id]:currentValue
-}),{})
+// const mapId = ContentData.reduce( (accMap, currentValue) =>({
+//     ...accMap,
+//     [currentValue.id]:currentValue
+// }),{})
 
 const LikedArticle = ({
     like,
+    mapId = getCategoryMap(ContentData)
 })=>{
 
     const idOfArticle = keys(like).map(categoryId => (
