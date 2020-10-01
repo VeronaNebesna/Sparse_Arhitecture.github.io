@@ -2,11 +2,15 @@ import React from "react"
 import Logo from "./Logo/Logo"
 import Menu from "./Menu/Menu"
 
-const Header = ()=>{
+const Header = ({
+    like
+})=>{
     return(
         <div>
             <Logo/>
-            <Menu/>
+            <Menu
+                like={like}
+            />
         </div>
     )
 }

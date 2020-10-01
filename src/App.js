@@ -36,7 +36,8 @@ class App extends Component{
     render(){
       return(
         <div>
-          <Header/>
+          <Header
+            like={this.state.likedPosts}/>
           <Main
               articleCategory={this.state.articleCategory}
               changeCategory={this.changeCategory}

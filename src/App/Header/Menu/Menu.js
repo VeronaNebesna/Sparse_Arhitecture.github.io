@@ -18,10 +18,17 @@ class Menu extends Component{
       })
   }
     render(){
+      const{
+        like
+      }=this.props
          return(
             <div>
                 <Burger drawerClickHandler ={this.drawerToggleClickHandler}/>
-                <SideDrawer close={this.backdropClickHandler} show={this.state.sideDrawerOpen}/>
+                <SideDrawer 
+                  close={this.backdropClickHandler} 
+                  show={this.state.sideDrawerOpen}
+                  like={like}
+                  />
             </div>
             )
     }
