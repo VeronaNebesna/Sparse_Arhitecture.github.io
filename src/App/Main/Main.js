@@ -5,9 +5,9 @@ import DarkSection from "./DarkSection/DarkSection"
 import PortfolioDarkSection from "./PortfolioDarkSection/PortfolioDarkSection"
 import ImgSection from "./ImgSection/ImgSection"
 import SliderFeddback from "./SliderFeedback/SliderFeedback"
-import LikedArticle from "../Components/LikedArticle/LikedArticle"
+import LikedArticle from "../Component/LikeArticle/LikedArticle"
 import Slider from "../Header/Slider/Slider"
-import ReadMore from "../Components/LikedArticle/ReadMore/ReadMore"
+import ReadMore from "../Component/ReadMore/ReadMore"
 
 
 

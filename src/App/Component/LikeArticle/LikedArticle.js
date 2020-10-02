@@ -10,11 +10,9 @@ const LikedArticle = ({
     like,
     mapId = getCategoryMap(ContentData)
 })=>{
-
     const idOfArticle = keys(like).map(categoryId => (
         mapId[categoryId]
     ))
-   
     return(
         <div >
             <div className ="header_img">
