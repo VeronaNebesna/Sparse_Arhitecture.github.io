@@ -1,5 +1,5 @@
 import React, { Fragment } from "react"
-import HeaderItems from "../../../Main/CategoryPage/HeaderItems"
+import HeaderItems from "../../../Main/CategoryPage/HeaderItem/HeaderItems"
 import ContentData, {getCategoryMap} from "../../../Main/PortfolioDarkSection/ContentPortfolio/ContentData"
 import "./ReadMore.css"
 

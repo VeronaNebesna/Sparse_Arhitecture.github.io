@@ -4,10 +4,7 @@ import  {Link} from "react-router-dom"
 import ContentData, {getCategoryMap} from "../../Main/PortfolioDarkSection/ContentPortfolio/ContentData"
 import ContCategoryPage from "../../Main/CategoryPage/ContCategoryPage/ContCategoryPage"
 
-// const mapId = ContentData.reduce( (accMap, currentValue) =>({
-//     ...accMap,
-//     [currentValue.id]:currentValue
-// }),{})
+
 
 const LikedArticle = ({
     like,
@@ -19,14 +16,14 @@ const LikedArticle = ({
     ))
    
     return(
-        <div>
+        <div >
             <div className ="header_img">
                 <div className = "blog">
                     <p>Blog</p>
                         <button className="button_category"><Link to="/" className="link">Home</Link> | <div className="link" >Liked articles</div></button>
                 </div>
             </div>
-            <div>
+            <div className="container">
                 {
                     idOfArticle.map((currentValue)=>(
                          <ContCategoryPage

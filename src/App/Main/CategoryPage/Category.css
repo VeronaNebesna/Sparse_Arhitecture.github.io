@@ -52,14 +52,13 @@
 }
 .row_category{
     display: flex;
-    flex-direction: column;
-    margin-top: 25px;
+    flex-direction: column-reverse;
+    margin-top: 50px;
     margin-bottom: 50px;
-
 }
 .title_port_category p:first-child{
-    font-size:40px;
-    color:rgb(249,204,65);
+    font-size:30px;
+    color:rgb(255, 255, 255);
     font-weight: 500;
     padding-top:50px;
     padding-bottom: 20px;
@@ -69,7 +68,6 @@
     color:rgb(117, 115, 115);
     line-height: 30px;
     padding: 10px 0 30px 0;
-    text-align: center;
 }
 .pic_portfolio_category img{
     width:100%;
@@ -79,38 +77,25 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    /* margin-top: 50px; */
 }
-.category_bottom div{
-   margin-top:15px;
+.category_bottom > div{
+    margin-top:15px;
     cursor:pointer;
+    margin:20px;
+    padding:10px;
+    color:rgb(249,204,65);
+    font-size: 17px;
+   
 }
 .category_bottom div:hover{
     color:rgb(241, 239, 106)
 }
-.data_post:hover:before{
-    background-color:rgb(241, 239, 106)
+
+.category_bottom > div  > i{
+    padding-left: 10px;
 }
-.data_post{
-    margin-left:35px;
-    color:rgb(249,204,65);
-    position:relative;
-}
-.data_post:before{
-    content:"";
-    width:20px;
-    height: 2px;
-    background-color:rgb(249,204,65);
-    display: block;
-    position: absolute;
-    top:50%;
-    left:-25px;
-}
-.fa-eye, .fa-user, .fa-comment{
-    margin-right:10px;
-}
-.views_post, .user_post,.comment_post{
-    color:rgb(249,204,65);
-}
+
 .name_of_category{
     color:rgb(255, 255, 255);
     text-align: center;
@@ -127,26 +112,26 @@
 .button_category div{
     padding-left: 5px;
 }
-@media(min-width:992px){
+@media(min-width:768px){
     .row_category{
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
+        flex-direction:row;
+        flex-wrap: wrap;
+
     }
-    .category_bottom{
-        flex-direction: row;
-        margin-top:10px;
-        justify-content: space-around;
-    }
+}
+@media(min-width:992px){
+ 
     .pic_portfolio_category img{
-        width:90%;
-        padding-top: 30px;
-    }    
+        width:100%;
+    } 
+    .row_page_cat{
+        display: flex;
+    }  
    
 }
 @media(min-width:1200px){
     .category_bottom{
-        margin-top:30px
+        margin-top: 80px;
     }
     
 }
