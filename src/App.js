@@ -3,8 +3,8 @@ import Header from "./App/Header/Header"
 import Main from "./App/Main/Main"
 import Footer from "./App/Footer/Footer"
 import "./App.css"
-import "./Grid.css"
-import "./Reset.css"
+import "./App/StylesCSS/Grid.css"
+import "./App/StylesCSS/Reset.css"
 
 
 class App extends Component{
