@@ -10,7 +10,6 @@ import slider3 from "./back_3.png"
 
 class Slider extends Component{
 render(){
-   
     return(
         <Fragment>
             <AliceCarousel mouseTrackingEnabled="true" mouseDragEnabled="true" autoPlay autoPlayInterval="5000" buttonsDisabled="false" showSlideInfo="true">
