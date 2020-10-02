@@ -2,7 +2,7 @@ import React from "react"
 import {keys} from "lodash"
 import  {Link} from "react-router-dom"
 import ContentData, {getCategoryMap} from "../../Main/PortfolioDarkSection/ContentPortfolio/ContentData"
-import ContCategoryPage from "../../Main/CategoryPage/ContCategoryPage/ContCategoryPage"
+import ContCategoryPage from "../CategoryPages/ContCategoryPage"
 
 
 

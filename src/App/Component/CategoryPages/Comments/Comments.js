@@ -1,11 +1,11 @@
 import React, { Component, Fragment } from "react"
 import todos from "./todos"
-import "./Comments.css"
+import "./ts.css"
 
 
-class Comments extends Component {
+class ts extends Component {
     state={
-        isOpenComments: false,
+        isOpents: false,
         inputText:"",
         showData:{
             text:'',
@@ -13,9 +13,9 @@ class Comments extends Component {
     }
     
     // Відкриття і закриття коментарів при натисканні на іконку коментарів
-    toggleComments (){
+    togglets (){
         this.setState({
-            isOpenComments : !this.state.isOpenComments
+            isOpents : !this.state.isOpents
         })
     }
 
@@ -42,28 +42,28 @@ class Comments extends Component {
         const{text} = showData
         return(
            <Fragment>
-                <div className="comment_post" onClick={()=> this.toggleComments()}><i class="far fa-comment"></i> 25+ Comments</div>
+                <div className="t_post" onClick={()=> this.togglets()}><i class="far fa-t"></i> 25+ ts</div>
 
              
 
 {/*Якщо true  то будується дана структура, тобто вікно з коментарями відкривається. */}
-                {this.state.isOpenComments && 
+                {this.state.isOpents && 
                 
-                <div className="comments_pages">
+                <div className="ts_pages">
 
-                    <form className ="comment_item">
+                    <form className ="t_item">
                         <input type="text" value={inputText} onChange={this.handleInputChange}/>
                         <button  type="submit" onClick={this.handleShow}>Send</button>
                     </form>
 
-                    <div className="comment_item">
+                    <div className="t_item">
                         <div className="user_icon"></div>
                         <p>{text}</p>
                     </div>
                     
                 {
                     todos.map(({id,text}) =>(//перебирання масиву з коментарями і деструктуризація
-                        <div className="comment_item" key={id}>
+                        <div className="t_item" key={id}>
                                 <div className="user_icon"></div>
                                 <p>{text}</p>
                         </div>
@@ -78,4 +78,4 @@ class Comments extends Component {
   
 }
 
-export default Comments
+export default ts

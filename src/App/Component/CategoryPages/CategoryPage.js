@@ -1,10 +1,10 @@
 import React, { Fragment } from "react"
 import "./Category.css"
-import ContCategoryPage from "./ContCategoryPage/ContCategoryPage"
-import ContentData, { getCategoryMap} from "../PortfolioDarkSection/ContentPortfolio/ContentData"
+import ContCategoryPage from "./ContCategoryPage"
+import ContentData, { getCategoryMap} from "../../Main/PortfolioDarkSection/ContentPortfolio/ContentData"
 import {keys} from "lodash"
 import HeaderItems from "./HeaderItems"
-import Aside from "./ContCategoryPage/Aside/Aside"
+import Aside from "./Aside/Aside"
 
 
 

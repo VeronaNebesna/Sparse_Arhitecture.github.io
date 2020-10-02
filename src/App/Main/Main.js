@@ -1,6 +1,6 @@
 import React from "react"
 import {Route} from "react-router-dom"
-import CategoryPage from "./CategoryPage/CategoryPage"
+import CategoryPage from "../Component/CategoryPages/CategoryPage"
 import DarkSection from "./DarkSection/DarkSection"
 import PortfolioDarkSection from "./PortfolioDarkSection/PortfolioDarkSection"
 import ImgSection from "./ImgSection/ImgSection"
