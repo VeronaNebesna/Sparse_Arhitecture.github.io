@@ -11,9 +11,9 @@ class App extends Component{
   state={
     articleCategory:{
     },
-    likedPosts:{
+    // likedPosts:{
       
-    },
+    // },
   }
 
   changeCategory = (categoryId, category) =>{
@@ -34,6 +34,7 @@ class App extends Component{
   }
 
     render(){
+      console.log(this.state.likedPosts)
       return(
         <div>
           <Header

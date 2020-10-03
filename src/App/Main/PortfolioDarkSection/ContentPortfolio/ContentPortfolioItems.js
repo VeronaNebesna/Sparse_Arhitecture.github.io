@@ -1,5 +1,6 @@
 import React, {useEffect} from "react"
 import {Link} from "react-router-dom"
+import {connect} from "react-redux"
 import Aos from "aos"
 
 
@@ -12,8 +13,10 @@ const ContentPortfolioItems = ({
     p2,
     category,
     changeCategory,
-    like,
-    changeLikedBtn,
+    addLike,
+    removeLike,
+    isLiked=false,
+    addLikesPosts
 }) =>{
     useEffect(()=>{
     Aos.init({
@@ -32,9 +35,8 @@ const ContentPortfolioItems = ({
                 <div className="desc_portfolio">
                     <div className="headline_desc_portfolio">
                         <p>{headline}</p>
-                        <p className="like" onClick={()=>changeLikedBtn(id)}> {
-                            like[id] ?  <i class="fas fa-heart"></i> : <i class="far fa-heart"></i>                           
-                        }
+                        <p className="like" onClick={()=> isLiked ? removeLike(id) : addLike(id) &&  addLikesPosts(id)}> 
+                        { isLiked ?   <i class="fas fa-heart"></i> : <i class="far fa-heart"></i>}
                         </p>
                     </div>
                     <div className="title_portfolio">
@@ -55,4 +57,30 @@ const ContentPortfolioItems = ({
     )
 }
 
-export default ContentPortfolioItems
+const mapStateToProps =(state, props)=>({
+    isLiked: state.likeState[props.id],
+    like: state.wishListState
+})
+
+const mapDispatchToProps = (dispatch)=>({
+    addLike: (id)=>dispatch({
+        type: "LIKE",
+        id,
+    }),
+    removeLike: (id)=>dispatch({
+        type: "DISLIKE",
+        id,
+    }),
+    addLikesPosts: (id)=>dispatch({
+        type:"ADD_LIKE_POSTS",
+        id
+    })
+})
+        
+
+
+
+export default connect (
+    mapStateToProps,
+    mapDispatchToProps
+) (ContentPortfolioItems)

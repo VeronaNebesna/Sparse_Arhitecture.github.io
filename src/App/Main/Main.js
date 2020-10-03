@@ -8,6 +8,7 @@ import SliderFeddback from "./SliderFeedback/SliderFeedback"
 import LikedArticle from "../Component/LikeArticle/LikedArticle"
 import Slider from "../Header/Slider/Slider"
 import ReadMore from "../Component/ReadMore/ReadMore"
+import {connect} from "react-redux"
 
 
 
@@ -17,8 +18,8 @@ const Main = ({
     like,
     changeLikedBtn,
     // categoryMap = getCategoryMap(ContentData),
-
 }) =>{
+
     return(
         <div>
             <Route  path="/" exact render ={()=>(
@@ -45,14 +46,15 @@ const Main = ({
                             articleCategory={articleCategory} 
                         /> 
                     )}/> 
-                 <Route path="/liked_post" render={()=>(
+          <Route path="/liked_post" render={()=>(
                      <LikedArticle
-                        like={like}
+                     like={like}
                         />
                  )}/>  
                   <Route path="/read_more_about/:arrCategory" exact component={ReadMore}/>            
         </div>
     )
 }
+
 
 export default Main

@@ -3,16 +3,18 @@ import {keys} from "lodash"
 import  {Link} from "react-router-dom"
 import ContentData, {getCategoryMap} from "../../Main/PortfolioDarkSection/ContentPortfolio/ContentData"
 import ContCategoryPage from "../CategoryPages/ContCategoryPage"
+import {connect} from "react-redux"
 
 
 
 const LikedArticle = ({
     like,
-    mapId = getCategoryMap(ContentData)
+    mapId = getCategoryMap(ContentData),
 })=>{
     const idOfArticle = keys(like).map(categoryId => (
         mapId[categoryId]
     ))
+    console.log(like)
     return(
         <div >
             <div className ="header_img">
@@ -30,12 +32,17 @@ const LikedArticle = ({
                             p1={currentValue.p1}
                             headline={currentValue.headline}
                          />
-                    ) )
+                    )) 
                 }
-               
             </div>
         </div>
     )
 }
 
-export default LikedArticle
+const mapStateToProps = (state)=>({
+    like: state.wishListState,
+})
+
+export default connect (
+    mapStateToProps,
+) (LikedArticle)
