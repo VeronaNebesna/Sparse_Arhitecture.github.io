@@ -32,8 +32,7 @@ const Aside = ()=>{
                                 <li><a href=""><i class="fab fa-behance"></i></a></li>                                
                             </ul>
                         </div>
-                        <p>Boot camps have its supporters andit sdetractors. Some people do not understand why you should have to spend money on boot camp when you can get. Boot camps have itssuppor ters andits detractors.
-                        </p>
+                        <p>A good architect should have a good understanding of the verbal sciences and history, be able to draw and know mathematics, stone-cutting and perspective;  but this is not enough, he must be an honest, reasonable and reasonable person;  must have liveliness and taste in his considerations;  without these qualities he cannot be a perfect architect or a person useful to society.</p>
                     </div>
                     <p className="white_line"></p>
 
@@ -41,19 +40,19 @@ const Aside = ()=>{
                         <button className="btn_posts">Popular Posts</button>
                         <div className="posts_list_item">
                             <img src={img1}/>
-                            <p className="name_of_pop_posts">Space The Final Frontier <span>02 Hours ago</span></p>
+                            <p className="name_of_pop_posts">10 Best Architectural Solutions of 2019<span>02 Hours ago</span></p>
                         </div>
                         <div className="posts_list_item">
                             <img src={img2}/>
-                            <p className="name_of_pop_posts">The Amazing Hubble<span>03 Hours ago</span></p>
+                            <p className="name_of_pop_posts">The Amazing Sensotec<span>03 Hours ago</span></p>
                         </div>
                         <div className="posts_list_item">
                             <img src={img3}/>
-                            <p className="name_of_pop_posts">Astronomy Or Astrology<span>03 Hours ago</span></p>
+                            <p className="name_of_pop_posts">New York Architecture <span>03 Hours ago</span></p>
                         </div>
                         <div className="posts_list_item">
                             <img src={img4}/>
-                            <p className="name_of_pop_posts">Asteroids telescope<span>03 Hours ago</span></p>
+                            <p className="name_of_pop_posts">Suburb Architecture<span>03 Hours ago</span></p>
                         </div>
                     </div>
                     <p className="white_line"></p>
@@ -66,12 +65,12 @@ const Aside = ()=>{
                                 </div>
                             <p className="white_dots_line"></p>
                                 <div className="categoty_post_list">
-                                    <span>Lifestyle</span>
+                                    <span>Bridges</span>
                                     <span>24</span>
                                 </div>
                             <p className="white_dots_line"></p>
                                 <div className="categoty_post_list">
-                                    <span>Fashion</span>
+                                    <span>Hi-tech</span>
                                     <span>59</span>
                                 </div>
                             <p className="white_dots_line"></p>
@@ -81,7 +80,7 @@ const Aside = ()=>{
                                 </div>
                             <p className="white_dots_line"></p>
                                 <div className="categoty_post_list">
-                                    <span>Food</span>
+                                    <span>Minimalism</span>
                                     <span>15</span>
                                 </div>
                             <p className="white_dots_line"></p>
@@ -91,7 +90,7 @@ const Aside = ()=>{
                                 </div>
                             <p className="white_dots_line"></p>
                                 <div className="categoty_post_list">
-                                    <span>Adventure</span>
+                                    <span>Building</span>
                                     <span>37</span>
                                 </div>
                             <p className="white_dots_line"></p>
@@ -111,14 +110,13 @@ const Aside = ()=>{
                     <div className="popular_posts_list">
                         <button className="btn_posts">Tag Clouds</button>
                         <div className="list_of_tags">
-                            <div>Technology</div>
-                            <div>Fashion</div>
-                            <div>Architecture</div>
-                            <div>Food</div>
-                            <div>Lifestyle</div>
+                            <div>Сonstruction Еechnologies </div>
+                            <div>Architectural minimalism</div>
+                            <div>Digital architecture</div>
+                            <div>Deconstructivism</div>
+                            <div>Hi-tech</div>
                             <div>Suburb</div>
                             <div>City</div>
-                            <div>Adventure</div>
                         </div>
                     </div>
                 </div>
