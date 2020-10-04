@@ -19,7 +19,9 @@ class Menu extends Component{
   }
     render(){
       const{
-        like
+        like,
+        changeColorTheme,
+        color
       }=this.props
          return(
             <div>
@@ -28,6 +30,9 @@ class Menu extends Component{
                   close={this.backdropClickHandler} 
                   show={this.state.sideDrawerOpen}
                   like={like}
+                  changeColorTheme={changeColorTheme}
+                  color={color}
+
                   />
             </div>
             )

@@ -10,7 +10,7 @@
     src:url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap")
 
 }
-body{
+body .dark{
     background-color:rgb(38,37,51);
     font-family: 'Roboto', sans-serif;
 }

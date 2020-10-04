@@ -11,7 +11,8 @@ const PortfolioDarkSection=({
     like,
     // changeLikedBtn,
     addLike,
-    removeLike
+    removeLike,
+    removeLikPosts
 })=>{
     useEffect(()=>{
         Aos.init({
@@ -34,6 +35,7 @@ const PortfolioDarkSection=({
                                 // changeLikedBtn={changeLikedBtn}
                                 addLike={addLike}
                                 removeLike={removeLike}
+                                removeLikPosts={removeLikPosts}
                                 />
                         <div class="row dark_row content_row ">
                             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" data-aos="fade">

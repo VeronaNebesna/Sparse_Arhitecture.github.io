@@ -4,11 +4,12 @@ import {keys} from "lodash"
 import "./SideDrawer.css"
 
 
-
 const SideDrawer = ({
     close,
     show,
     like,
+    changeColorTheme,
+    color
 }) => {
     let drawerClasses = "side-drawer";
     if(show){
@@ -29,6 +30,8 @@ const SideDrawer = ({
                         }</Link></li>
                 <li><a href="">Blog</a></li>
                 <li><a href="">Contact</a></li>
+                <li><button className="btn_theme" onClick={ ()=>changeColorTheme() }>Theme</button></li>
+
             </ul>
         </nav>
     )

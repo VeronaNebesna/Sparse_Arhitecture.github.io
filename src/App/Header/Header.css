@@ -32,7 +32,6 @@
 /* --------div in slider--------- */
 .content_slider{
     font-family: 'Roboto', sans-serif;
-    width:250px;
     min-height: 250px;
     position: absolute;
     top:50%;

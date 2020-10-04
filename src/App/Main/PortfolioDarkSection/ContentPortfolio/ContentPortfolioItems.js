@@ -15,7 +15,8 @@ const ContentPortfolioItems = ({
     isLiked,
     // changeLikedBtn,
     addLike,
-    removeLike
+    removeLike,
+    removeLikPosts
 }) =>{
     useEffect(()=>{
     Aos.init({
@@ -34,7 +35,7 @@ const ContentPortfolioItems = ({
                 <div className="desc_portfolio">
                     <div className="headline_desc_portfolio">
                         <p>{headline}</p>
-                        <p className="like" onClick={()=>isLiked ?  removeLike(id) : addLike(id)}> 
+                        <p className="like" onClick={()=>isLiked ?  removeLike(id) || removeLikPosts(id)  : addLike(id)}> 
                         { isLiked ? <i class="fas fa-heart"></i> : <i class="far fa-heart"></i>}
                         </p>
                     </div>

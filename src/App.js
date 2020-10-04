@@ -2,9 +2,11 @@ import React, {Component} from 'react';
 import Header from "./App/Header/Header"
 import Main from "./App/Main/Main"
 import Footer from "./App/Footer/Footer"
+import {omit} from "lodash"
 import "./App.css"
 import "./App/StylesCSS/Grid.css"
 import "./App/StylesCSS/Reset.css"
+import "./App/Header/Menu/Burger/DarkTheme.css"
 
 
 class App extends Component{
@@ -14,6 +16,7 @@ class App extends Component{
     likedPosts:{
       
     },
+    colorTheme: true
   }
 
   changeCategory = (categoryId, category) =>{
@@ -40,13 +43,26 @@ class App extends Component{
       }
     }))
   }
-
+  changeColorTheme = ()=>{
+    this.setState( (prevState)=>({
+      colorTheme: !prevState.colorTheme
+    })
+    )
+  }
+  removeLikPosts = (id)=>{
+    this.setState ((prevState)=>({
+      likedPosts:omit(prevState.likedPosts, id)
+      
+    }))
+  }
     render(){
-      // console.log(this.state.likedPosts)
       return(
-        <div>
+        <div className={this.state.colorTheme ? "dark" :" light"}>
           <Header
-            like={this.state.likedPosts}/>
+            like={this.state.likedPosts}
+            changeColorTheme={this.changeColorTheme}
+            color ={this.state.colorTheme}
+            />
           <Main
               articleCategory={this.state.articleCategory}
               changeCategory={this.changeCategory}
@@ -54,6 +70,7 @@ class App extends Component{
               // changeLikedBtn={this.changeLikedBtn}
               addLike ={this.addLikedBtn}
               removeLike={this.removeLikedBtn}
+              removeLikPosts={this.removeLikPosts}
           />
           <Footer/>
         </div>

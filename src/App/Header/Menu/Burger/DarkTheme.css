@@ -1,0 +1,99 @@
+.light{
+    background-color:rgb(255, 255, 255);
+    
+}
+.light p, .light a {
+    color: black
+}
+.light .side-drawer, .light .content_slider:before, .light  .content_slider:after{
+    background-color: white;
+}
+.light .close_menu, .light .content_slider p.title_content_slider, .light .title_port_category p:first-child, .light .categoty_post_list, .light .blog p{
+    color:black
+}
+.light .close_menu:hover , .light .subtitle, .light .list p, .light .category_bottom > div:hover{
+    color:rgb(249,205,63);
+}
+.light .details{
+    background-color: rgb(255,255,255);
+    border:2px solid rgb(38,37,51);
+    color:rgb(38,37,51);
+}
+.light .details:before, .light .details:after{
+    background-color: rgb(38,37,51)
+}
+.light .details:hover , .light .details:hover:before,.light .details:hover:after, .light .btn_read_more button:hover:after,  .light .btn_read_more button:hover, .light .btn_load_more button:hover:after, .light .btn_load_more button:hover:before, .light .btn_load_more button:hover {
+    background-color: rgb(249,205,63);
+    border-color: rgb(249,205,63);
+    color:rgb(255, 255, 255)
+}
+
+
+.light .btn_read_more button,  .light .btn_load_more button {
+    background-color:rgb(255, 255, 255); 
+    border:2px solid rgb(38,37,51);
+    color:rgb(38,37,51);
+}
+.light .btn_read_more button a, .light .name_of_pop_posts span{
+    color:rgb(38,37,51);
+}
+.light .btn_read_more button:after ,  .light .btn_load_more button:after,  .light .btn_load_more button:before{
+    background-color: rgb(38,37,51);
+}
+.light .box_our_company{
+    background-color:rgba(249,205,63, 0.3);
+}
+.light .box_our_company:hover, .light .font_icons:hover{
+    background-color: rgb(68, 67, 92);
+    color: rgb(255, 255, 255);
+}
+.light .title_estimate, .light .content_estimate, .light .newsletter_column p, .light .list ul li, .light .newsletter_column span, .light .copyright_ftr p,  .light .links_footer{
+    color:rgb(255, 255, 255);
+}
+.light .btn_estimate button{
+    background-color: rgba(255, 255, 255, 0.7);
+    border:2px solid rgb(255, 255, 255);
+    color:rgb(0, 0, 0);
+}
+ .light .blog{
+    background-color: rgba(255, 255, 255, 0.3);
+    color:rgb(0, 0, 0);
+}
+.light .btn_estimate button:after, .light .btn_estimate button:before{
+    background-color: rgb(255, 255, 255)
+}
+.light .btn_estimate button:hover{
+    background-color: rgb(29, 33, 36);
+    border-color:rgb(29, 33, 36);
+    color:rgb(255, 255, 255);
+}
+
+.light .btn_estimate > button:hover:after, .light .btn_estimate > button:hover:before{
+    background-color:rgb(29, 33, 36);
+}
+ .light .footer_dark_section{
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.light .button_write_to_us{
+    background-color:rgba(0, 0, 0, 0.61);
+    border:1px solid rgb(0, 0, 0);
+}
+
+
+.light .arrow_up{
+    color:rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.5);
+}
+.light .arrow_up:hover {
+    background-color: rgba(0, 0, 0, 0.61);
+    color:rgb(249,205,63);
+}
+.light .category_bottom > div, .light .architects_team span{
+    color:rgb(29, 33, 36);
+}
+.light .aside_box{
+    background-color: rgba(20, 17, 17, 0.4);
+}
+.light .blur{
+    background-color: rgba(255,255,255,0.05);
+}

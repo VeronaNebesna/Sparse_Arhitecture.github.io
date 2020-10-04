@@ -3,13 +3,19 @@ import Logo from "./Logo/Logo"
 import Menu from "./Menu/Menu"
 
 const Header = ({
-    like
+    like,
+    changeColorTheme,
+    color,
 })=>{
     return(
         <div>
             <Logo/>
             <Menu
                 like={like}
+            changeColorTheme={changeColorTheme}
+            color ={color}
+
+
             />
         </div>
     )

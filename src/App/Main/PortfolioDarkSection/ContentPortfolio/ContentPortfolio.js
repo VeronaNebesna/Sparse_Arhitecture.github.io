@@ -8,7 +8,8 @@ const ContentPortfolio = ({
     like,
     // changeLikedBtn
     removeLike,
-    addLike
+    addLike,
+    removeLikPosts
 }
 ) =>{
     return(
@@ -33,6 +34,7 @@ const ContentPortfolio = ({
                     isLiked={like[id]}
                     // changeLikedBtn={changeLikedBtn}
                     removeLike={removeLike}
+                    removeLikPosts={removeLikPosts}
                     addLike={addLike}
                 />
                ))

@@ -15,10 +15,9 @@ const Main = ({
     articleCategory,
     changeCategory,
     like,
-    // changeLikedBtn,
     addLike,
     removeLike,
-    // categoryMap = getCategoryMap(ContentData),
+    removeLikPosts
 }) =>{
     return(
         <div>
@@ -35,6 +34,7 @@ const Main = ({
                         // changeLikedBtn={changeLikedBtn}
                         removeLike={removeLike}
                         addLike = {addLike}
+                        removeLikPosts={removeLikPosts}
                      />
                 )}/>
                 <Route path = "/" exact render={()=>(
@@ -51,6 +51,7 @@ const Main = ({
           <Route path="/liked_post" render={()=>(
                      <LikedArticle
                         like={like}
+                        
                         />
                  )}/>  
                   <Route path="/read_more_about/:arrCategory" exact component={ReadMore}/>            

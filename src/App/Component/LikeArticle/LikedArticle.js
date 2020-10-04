@@ -9,10 +9,13 @@ import ContCategoryPage from "../CategoryPages/ContCategoryPage"
 const LikedArticle = ({
     like,
     mapId = getCategoryMap(ContentData),
+    id
 })=>{
-    const idOfArticle = keys(like).map(categoryId => (
-        mapId[categoryId]
+
+    const listOfLikePosts = keys(like).map(categoryId => (
+       mapId[categoryId]
     ))
+
     return(
         <div >
             <div className ="header_img">
@@ -22,15 +25,17 @@ const LikedArticle = ({
                 </div>
             </div>
             <div className="container">
-                { idOfArticle.map((currentValue)=>(
+                { listOfLikePosts.map((currentValue)=>(
+                    
                          <ContCategoryPage
-                            isLiked={like}
-                            id={currentValue.id}
+                            // isLiked={like}
+                            id={like[id]}
                             img={currentValue.img}
                             p1={currentValue.p1}
                             headline={currentValue.headline}
-                         />
-                ))}
+                         /> 
+                )) 
+            }
             </div>
         </div>
     )

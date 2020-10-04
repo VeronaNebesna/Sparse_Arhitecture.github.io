@@ -8,11 +8,11 @@ const ContCategoryPage = ({
     id,
     img,
     p1,
-    isLiked=false
+    // isLiked=false
 }) =>{
     return(
         <Fragment>
-            { isLiked[id] ? <div className=" row row_category" key={id}>  
+            <div className=" row row_category" key={id}>  
                 <div className="col-xs-12 col-sm-6 col-md-4 col-lg-4">
                     <div className="category_bottom">
                         <div className="date_post"> 12 Dec, 2020<i class="fas fa-calendar-alt"></i></div>
@@ -30,8 +30,7 @@ const ContCategoryPage = ({
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem officiis voluptatum eos veniam eligendi voluptates error consectetur quas quae ut nemo maiores pariatur cum, sed aperiam iusto molestias repudiandae voluptate. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat temporibus maxime modi ipsum quo, eligendi ut officia aliquid? Aspernatur vero doloremque sint quo repudiandae. Libero culpa velit eveniet ipsum neque!</p>
                     </div> 
                 </div>
-                </div> : null
-            }                     
+                </div>                   
     </Fragment> 
     )
 }
