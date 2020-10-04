@@ -9,7 +9,9 @@ import Aos from "aos"
 const PortfolioDarkSection=({
     changeCategory,
     like,
-    changeLikedBtn,
+    // changeLikedBtn,
+    addLike,
+    removeLike
 })=>{
     useEffect(()=>{
         Aos.init({
@@ -29,7 +31,9 @@ const PortfolioDarkSection=({
                             <ContentPortfolio
                                 changeCategory={ changeCategory}
                                 like={like}
-                                changeLikedBtn={changeLikedBtn}
+                                // changeLikedBtn={changeLikedBtn}
+                                addLike={addLike}
+                                removeLike={removeLike}
                                 />
                         <div class="row dark_row content_row ">
                             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" data-aos="fade">

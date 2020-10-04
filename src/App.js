@@ -11,9 +11,9 @@ class App extends Component{
   state={
     articleCategory:{
     },
-    // likedPosts:{
+    likedPosts:{
       
-    // },
+    },
   }
 
   changeCategory = (categoryId, category) =>{
@@ -24,17 +24,25 @@ class App extends Component{
     }))
   } 
 
-  changeLikedBtn=(id)=>{
+  addLikedBtn=(id)=>{
     this.setState( (prevState)=>({
       likedPosts:{
         ...prevState.likedPosts,
-        [id]:!prevState.likedPosts[id],
+        [id]:true,
+      }
+    }))
+  }
+ removeLikedBtn=(id)=>{
+    this.setState( (prevState)=>({
+      likedPosts:{
+        ...prevState.likedPosts,
+        [id]:false,
       }
     }))
   }
 
     render(){
-      console.log(this.state.likedPosts)
+      // console.log(this.state.likedPosts)
       return(
         <div>
           <Header
@@ -43,7 +51,9 @@ class App extends Component{
               articleCategory={this.state.articleCategory}
               changeCategory={this.changeCategory}
               like={this.state.likedPosts}
-              changeLikedBtn={this.changeLikedBtn}
+              // changeLikedBtn={this.changeLikedBtn}
+              addLike ={this.addLikedBtn}
+              removeLike={this.removeLikedBtn}
           />
           <Footer/>
         </div>

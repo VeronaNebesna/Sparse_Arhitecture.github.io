@@ -8,7 +8,7 @@ import "./SideDrawer.css"
 const SideDrawer = ({
     close,
     show,
-    like
+    like,
 }) => {
     let drawerClasses = "side-drawer";
     if(show){
@@ -34,4 +34,6 @@ const SideDrawer = ({
     )
 }
 
-export default SideDrawer 
+
+
+export default  SideDrawer

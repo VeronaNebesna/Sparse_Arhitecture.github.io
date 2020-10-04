@@ -6,7 +6,9 @@ import ContentData from "./ContentData"
 const ContentPortfolio = ({
     changeCategory,
     like,
-    changeLikedBtn
+    // changeLikedBtn
+    removeLike,
+    addLike
 }
 ) =>{
     return(
@@ -28,8 +30,10 @@ const ContentPortfolio = ({
                     p2={p2}
                     headline={headline}
                     category={category}  
-                    like={like}
-                    changeLikedBtn={changeLikedBtn}
+                    isLiked={like[id]}
+                    // changeLikedBtn={changeLikedBtn}
+                    removeLike={removeLike}
+                    addLike={addLike}
                 />
                ))
             }

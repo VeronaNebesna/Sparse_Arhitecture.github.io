@@ -8,7 +8,6 @@ import SliderFeddback from "./SliderFeedback/SliderFeedback"
 import LikedArticle from "../Component/LikeArticle/LikedArticle"
 import Slider from "../Header/Slider/Slider"
 import ReadMore from "../Component/ReadMore/ReadMore"
-import {connect} from "react-redux"
 
 
 
@@ -16,10 +15,11 @@ const Main = ({
     articleCategory,
     changeCategory,
     like,
-    changeLikedBtn,
+    // changeLikedBtn,
+    addLike,
+    removeLike,
     // categoryMap = getCategoryMap(ContentData),
 }) =>{
-
     return(
         <div>
             <Route  path="/" exact render ={()=>(
@@ -32,7 +32,9 @@ const Main = ({
                     <PortfolioDarkSection
                         changeCategory={ changeCategory}
                         like={like}
-                        changeLikedBtn={changeLikedBtn}
+                        // changeLikedBtn={changeLikedBtn}
+                        removeLike={removeLike}
+                        addLike = {addLike}
                      />
                 )}/>
                 <Route path = "/" exact render={()=>(
@@ -48,7 +50,7 @@ const Main = ({
                     )}/> 
           <Route path="/liked_post" render={()=>(
                      <LikedArticle
-                     like={like}
+                        like={like}
                         />
                  )}/>  
                   <Route path="/read_more_about/:arrCategory" exact component={ReadMore}/>            

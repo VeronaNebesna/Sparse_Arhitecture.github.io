@@ -5,7 +5,12 @@ const wishListReducer =(state={},
                 return{
                     ...state,
                     [action.id]: state[action.id]
-                }
+                } 
+            // case "SUM_OF_POSTS":
+            //     return{
+            //         ...state,
+            //         [action.id]: (state[action.id] || 0 )  + 1
+            //     }
             default:
                 return state
         }
