@@ -4,15 +4,16 @@
     background: url(back_3.png) no-repeat 50% 50%;
     background-size: cover;
     background-attachment: fixed;
-    z-index: -10;
 }
 .footer_dark_section{
     background-color: rgba(0, 0, 0, 0.8);
+
 }
 .footer_row{
     flex-direction: row;
     flex-wrap: wrap;
     align-items: flex-start;
+   
 }
 /* --------list------- */
 .list p, .newsletter_column p{

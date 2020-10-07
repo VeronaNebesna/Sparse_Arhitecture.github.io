@@ -28,7 +28,6 @@ const LikedArticle = ({
             <div className="container">
                 { listOfLikePosts.map((currentValue)=>(
                          <ContCategoryPage
-                            // isLiked={like}
                             id={like[id]}
                             img={currentValue.img}
                             p1={currentValue.p1}

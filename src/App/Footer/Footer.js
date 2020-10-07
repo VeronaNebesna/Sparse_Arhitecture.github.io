@@ -7,7 +7,6 @@ import FooterLinks from "./FooterLinks"
 
 
 class Footer extends Component {
-
     scrollToTop =()=>{
        window.scrollTo({
            top:0,
@@ -29,22 +28,20 @@ class Footer extends Component {
                                 li3,
                                 li4,
                             }) => (
-                               
-                                    <FooterItems
-                                        id ={id}
-                                        p={p}
-                                        li1={li1}
-                                        li2={li2}
-                                        li3={li3}
-                                        li4={li4}
-                                    />
+                                <FooterItems
+                                    id ={id}
+                                    p={p}
+                                    li1={li1}
+                                    li2={li2}
+                                    li3={li3}
+                                    li4={li4}
+                                />
                             ))
                         }
                         <FooterEmail/>
                     </div>
                    <FooterLinks/>
                 </div>
-           
                 <div class="arrow_up" onClick={()=>this.scrollToTop()}>
                     <i class="fas fa-angle-up"></i>
                 </div>
