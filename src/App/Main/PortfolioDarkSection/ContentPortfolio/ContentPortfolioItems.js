@@ -13,7 +13,6 @@ const ContentPortfolioItems = ({
     category,
     changeCategory,
     isLiked,
-    // changeLikedBtn,
     addLike,
     removeLike,
     removeLikPosts

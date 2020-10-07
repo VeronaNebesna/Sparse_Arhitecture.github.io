@@ -17,7 +17,8 @@ const Main = ({
     like,
     addLike,
     removeLike,
-    removeLikPosts
+    removeLikPosts,
+    match
 }) =>{
     return(
         <div>
@@ -43,18 +44,24 @@ const Main = ({
                 <Route path="/" exact render ={()=>(
                     <SliderFeddback/>
                 )}/>
-                <Route path ="/category" render ={()=>(
+                <Route path ="/category"  exact render ={()=>(
                         <CategoryPage
                             articleCategory={articleCategory} 
                         /> 
                     )}/> 
-          <Route path="/liked_post" render={()=>(
+          <Route path="/liked_post" exact render={()=>(
                      <LikedArticle
-                        like={like}
-                        
-                        />
+                        like={like}/>
                  )}/>  
-                  <Route path="/read_more_about/:arrCategory" exact component={ReadMore}/>            
+                  <Route path="/read_more_about/:arrCategory" exact render={(match)=>(
+                     <ReadMore
+                        match={match}
+                        like={like}
+                        addLike={addLike}
+                        removeLike={removeLike}  
+                        removeLikPosts={removeLikPosts}
+                    />
+                 )}/>          
         </div>
     )
 }

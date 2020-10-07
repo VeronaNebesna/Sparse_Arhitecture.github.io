@@ -6,7 +6,6 @@ import ContentData from "./ContentData"
 const ContentPortfolio = ({
     changeCategory,
     like,
-    // changeLikedBtn
     removeLike,
     addLike,
     removeLikPosts
@@ -32,7 +31,6 @@ const ContentPortfolio = ({
                     headline={headline}
                     category={category}  
                     isLiked={like[id]}
-                    // changeLikedBtn={changeLikedBtn}
                     removeLike={removeLike}
                     removeLikPosts={removeLikPosts}
                     addLike={addLike}
