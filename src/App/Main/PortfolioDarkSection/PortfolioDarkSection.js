@@ -6,14 +6,7 @@ import Aos from "aos"
 
 
 
-const PortfolioDarkSection=({
-    changeCategory,
-    like,
-    // changeLikedBtn,
-    addLike,
-    removeLike,
-    removeLikPosts
-})=>{
+const PortfolioDarkSection=()=>{
     useEffect(()=>{
         Aos.init({
             duration:3000
@@ -25,18 +18,10 @@ const PortfolioDarkSection=({
                     <div class="container">
                         <div class="row dark_row">
                             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                                    <TitlePortfolioSection
-                                    />    
+                                <TitlePortfolioSection/>    
                             </div>
                         </div>
-                            <ContentPortfolio
-                                changeCategory={ changeCategory}
-                                like={like}
-                                // changeLikedBtn={changeLikedBtn}
-                                addLike={addLike}
-                                removeLike={removeLike}
-                                removeLikPosts={removeLikPosts}
-                                />
+                            <ContentPortfolio/>
                         <div class="row dark_row content_row ">
                             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" data-aos="fade">
                                 <div class="btn_load_more">

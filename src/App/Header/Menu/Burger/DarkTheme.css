@@ -11,7 +11,7 @@
 .light .close_menu, .light .content_slider p.title_content_slider, .light .title_port_category p:first-child, .light .categoty_post_list, .light .blog p{
     color:black
 }
-.light .close_menu:hover , .light .subtitle, .light .list p, .light .category_bottom > div:hover{
+.light .close_menu:hover , .light .title_portfolio p:first-child,.light .subtitle, .light .list p, .light .category_bottom > div:hover{
     color:rgb(249,205,63);
 }
 .light .details{

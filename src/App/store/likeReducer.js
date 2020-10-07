@@ -1,5 +1,6 @@
+import {omit} from "lodash"
 const likeReducer = (state={
-   
+
 }, action) => {
     switch(action.type){
         case "LIKE":
@@ -12,6 +13,9 @@ const likeReducer = (state={
                 ...state,
                 [action.id]:false
             }
+        case "REMOVE_LIKES_POSTS":
+            return omit(state, action.id)
+
         default:
             return state
     }

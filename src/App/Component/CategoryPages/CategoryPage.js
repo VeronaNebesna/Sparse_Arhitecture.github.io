@@ -5,6 +5,7 @@ import ContentData, { getCategoryMap} from "../../Main/PortfolioDarkSection/Cont
 import {keys} from "lodash"
 import HeaderItems from "./HeaderItems"
 import Aside from "./Aside/Aside"
+import { connect } from "react-redux"
 
 
 
@@ -34,11 +35,9 @@ const CategoryPage = ({
                                         headline={categoryId.headline}
                                         category={categoryId.category}
                                     />
-                                )
-                            }
-                    
-                    }    
-                    )}
+                                )}
+                            }    
+                         )}
                     </div>
                     <div className ="col-xs-12 col-sm-12 col-md-4 col-lg-4">
                         <Aside/>
@@ -49,4 +48,10 @@ const CategoryPage = ({
     )
 }
 
-export default CategoryPage
+const mapStateToprops = (state)=>({
+    articleCategory: state.categoryList
+})
+
+export default connect(
+    mapStateToprops
+) (CategoryPage)

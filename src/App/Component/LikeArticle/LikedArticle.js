@@ -3,6 +3,7 @@ import {keys} from "lodash"
 import  {Link} from "react-router-dom"
 import ContentData, {getCategoryMap} from "../../Main/PortfolioDarkSection/ContentPortfolio/ContentData"
 import ContCategoryPage from "../CategoryPages/ContCategoryPage"
+import { connect } from "react-redux"
 
 
 
@@ -26,7 +27,6 @@ const LikedArticle = ({
             </div>
             <div className="container">
                 { listOfLikePosts.map((currentValue)=>(
-                    
                          <ContCategoryPage
                             // isLiked={like}
                             id={like[id]}
@@ -41,5 +41,10 @@ const LikedArticle = ({
     )
 }
 
+const mapStateToProps = (state)=>({
+    like: state.likeState
+})
 
-export default LikedArticle
+export default connect(
+    mapStateToProps
+)(LikedArticle)

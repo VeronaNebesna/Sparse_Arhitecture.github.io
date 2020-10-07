@@ -3,14 +3,7 @@ import ContentPortfolioItems from "./ContentPortfolioItems"
 import ContentData from "./ContentData"
 
 
-const ContentPortfolio = ({
-    changeCategory,
-    like,
-    removeLike,
-    addLike,
-    removeLikPosts
-}
-) =>{
+const ContentPortfolio = () =>{
     return(
         <Fragment>
             { 
@@ -23,17 +16,12 @@ const ContentPortfolio = ({
                    category,      
                })=>(
                 <ContentPortfolioItems
-                    changeCategory={ changeCategory}
                     img={img}
                     id={id}
                     p1={p1}
                     p2={p2}
                     headline={headline}
                     category={category}  
-                    isLiked={like[id]}
-                    removeLike={removeLike}
-                    removeLikPosts={removeLikPosts}
-                    addLike={addLike}
                 />
                ))
             }

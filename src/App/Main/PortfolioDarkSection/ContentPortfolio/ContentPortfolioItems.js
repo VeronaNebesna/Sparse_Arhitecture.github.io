@@ -1,6 +1,8 @@
 import React, {useEffect} from "react"
 import {Link} from "react-router-dom"
+import {connect} from "react-redux"
 import Aos from "aos"
+import { add } from "lodash"
 
 
 
@@ -15,7 +17,7 @@ const ContentPortfolioItems = ({
     isLiked,
     addLike,
     removeLike,
-    removeLikPosts
+    removeLikedPosts
 }) =>{
     useEffect(()=>{
     Aos.init({
@@ -34,8 +36,8 @@ const ContentPortfolioItems = ({
                 <div className="desc_portfolio">
                     <div className="headline_desc_portfolio">
                         <p>{headline}</p>
-                        <p className="like" onClick={()=>isLiked ?  removeLike(id) || removeLikPosts(id)  : addLike(id)}> 
-                        { isLiked ? <i class="fas fa-heart"></i> : <i class="far fa-heart"></i>}
+                        <p className="like" onClick={()=> isLiked ? removeLike(id) && removeLikedPosts(id): addLike(id)}> 
+                        { isLiked ?  <i class="fas fa-heart"></i>: <i class="far fa-heart"></i>}
                         </p>
                     </div>
                     <div className="title_portfolio">
@@ -56,4 +58,31 @@ const ContentPortfolioItems = ({
     )
 }
 
-export default ContentPortfolioItems
+
+const mapStateToProps = (state, props)=>({
+    isLiked:state.likeState[props.id],
+    articleCategory: state.categoryList
+})
+const mapDispatchToProps = (dispatch)=>({
+    addLike: (id)=>dispatch({
+        type:"LIKE",
+        id
+    }),
+    removeLike: (id)=>dispatch({
+        type:"DISLIKE",
+        id
+    }),
+    removeLikedPosts:(id)=>dispatch({
+        type:"REMOVE_LIKES_POSTS",
+        id,
+    }),
+    changeCategory: (id, category)=>dispatch({
+        type:"changeCategory",
+        id,
+        category
+    })
+})
+export default connect (
+    mapStateToProps,
+    mapDispatchToProps
+)( ContentPortfolioItems)

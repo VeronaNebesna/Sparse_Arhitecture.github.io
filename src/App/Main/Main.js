@@ -12,56 +12,22 @@ import ReadMore from "../Component/ReadMore/ReadMore"
 
 
 const Main = ({
-    articleCategory,
-    changeCategory,
-    like,
-    addLike,
-    removeLike,
-    removeLikPosts,
     match
 }) =>{
     return(
         <div>
-            <Route  path="/" exact render ={()=>(
-                    <Slider/>
-                )}/>
-                <Route path = "/" exact render={()=>(
-                     <DarkSection/>
-                )}/>
-                <Route path = "/" exact render={()=>(
-                    <PortfolioDarkSection
-                        changeCategory={ changeCategory}
-                        like={like}
-                        // changeLikedBtn={changeLikedBtn}
-                        removeLike={removeLike}
-                        addLike = {addLike}
-                        removeLikPosts={removeLikPosts}
-                     />
-                )}/>
-                <Route path = "/" exact render={()=>(
-                    <ImgSection/>
-                )}/>
-                <Route path="/" exact render ={()=>(
-                    <SliderFeddback/>
-                )}/>
-                <Route path ="/category"  exact render ={()=>(
-                        <CategoryPage
-                            articleCategory={articleCategory} 
-                        /> 
-                    )}/> 
-          <Route path="/liked_post" exact render={()=>(
-                     <LikedArticle
-                        like={like}/>
-                 )}/>  
-                  <Route path="/read_more_about/:arrCategory" exact render={(match)=>(
-                     <ReadMore
-                        match={match}
-                        like={like}
-                        addLike={addLike}
-                        removeLike={removeLike}  
-                        removeLikPosts={removeLikPosts}
-                    />
-                 )}/>          
+            <Route  path="/" exact component ={Slider}/>
+            <Route path = "/" exact component={DarkSection}/>
+            <Route path = "/" exact component={PortfolioDarkSection}/>
+            <Route path = "/" exact component={ImgSection}/>
+            <Route path="/" exact component={SliderFeddback}/>
+            <Route path ="/category"  exact component ={CategoryPage}/> 
+            <Route path="/liked_post" component={LikedArticle}/>  
+            <Route path="/read_more_about/:arrCategory" exact render={(match)=>(
+                <ReadMore
+                match={match}
+            />
+            )}/>          
         </div>
     )
 }

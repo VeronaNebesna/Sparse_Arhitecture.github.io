@@ -1,5 +1,6 @@
 import React, { Fragment } from "react"
 import HeaderItems from "../CategoryPages/HeaderItems"
+import {connect} from 'react-redux'
 import ContentData, {getCategoryMap} from "../../Main/PortfolioDarkSection/ContentPortfolio/ContentData"
 import "./ReadMore.css"
 
@@ -7,13 +8,13 @@ import "./ReadMore.css"
 const ReadMore =({
     match,
     mapId = getCategoryMap(ContentData),
+    isLiked,
     addLike,
     removeLike,
-    like,
-    removeLikPosts
+    removeLikedPosts
 })=>{
     const id = mapId[match.match.params.arrCategory].id
-    console.log(id)
+    console.log(isLiked)
     return(
         <Fragment>
              <HeaderItems
@@ -25,8 +26,8 @@ const ReadMore =({
                         <div className="headline_of_the_items_of_list">
                             <p>{mapId[match.match.params.arrCategory].p1}</p>
                         </div>
-                        <p className="like_read_more" onClick={()=>like[id] ?  removeLike(id) || removeLikPosts(id) : addLike(id)}> 
-                        { like[id] ? <i class="fas fa-heart"></i> : <i class="far fa-heart"></i>}
+                        <p className="like_read_more" onClick={()=> isLiked[id] ? removeLike(id) && removeLikedPosts(id): addLike(id)}> 
+                        { isLiked[id]? <i class="fas fa-heart"></i>: <i class="far fa-heart"></i>}
                         </p>
                     </div>
                     <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
@@ -81,4 +82,24 @@ const ReadMore =({
     )
 }
 
-export default ReadMore
+const mapStateToProps = (state)=>({
+    isLiked:state.likeState
+})
+const mapDispatchToProps = (dispatch)=>({
+    addLike: (id)=>dispatch({
+        type:"LIKE",
+        id
+    }),
+    removeLike: (id)=>dispatch({
+        type:"DISLIKE",
+        id
+    }),
+    removeLikedPosts:(id)=>dispatch({
+        type:"REMOVE_LIKES_POSTS",
+        id,
+    })
+})
+export default connect (
+    mapStateToProps,
+    mapDispatchToProps
+)(ReadMore)
