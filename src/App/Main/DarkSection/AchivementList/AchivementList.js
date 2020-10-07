@@ -5,6 +5,7 @@ import Aos from "aos"
 import "./AchivementList.css"
 
 
+
 const AchivementList = () =>{
     useEffect(()=>{
         Aos.init({
