@@ -1,0 +1,40 @@
+{
+  "files": {
+    "main.css": "/blog_react.github.io/static/css/main.6e483cd2.chunk.css",
+    "main.js": "/blog_react.github.io/static/js/main.d2b762ea.chunk.js",
+    "main.js.map": "/blog_react.github.io/static/js/main.d2b762ea.chunk.js.map",
+    "runtime-main.js": "/blog_react.github.io/static/js/runtime-main.68e69e2e.js",
+    "runtime-main.js.map": "/blog_react.github.io/static/js/runtime-main.68e69e2e.js.map",
+    "static/css/2.0168826d.chunk.css": "/blog_react.github.io/static/css/2.0168826d.chunk.css",
+    "static/js/2.c65898ee.chunk.js": "/blog_react.github.io/static/js/2.c65898ee.chunk.js",
+    "static/js/2.c65898ee.chunk.js.map": "/blog_react.github.io/static/js/2.c65898ee.chunk.js.map",
+    "index.html": "/blog_react.github.io/index.html",
+    "precache-manifest.1274aea037dfb63c50ffbed9e7d13966.js": "/blog_react.github.io/precache-manifest.1274aea037dfb63c50ffbed9e7d13966.js",
+    "service-worker.js": "/blog_react.github.io/service-worker.js",
+    "static/css/2.0168826d.chunk.css.map": "/blog_react.github.io/static/css/2.0168826d.chunk.css.map",
+    "static/css/main.6e483cd2.chunk.css.map": "/blog_react.github.io/static/css/main.6e483cd2.chunk.css.map",
+    "static/js/2.c65898ee.chunk.js.LICENSE.txt": "/blog_react.github.io/static/js/2.c65898ee.chunk.js.LICENSE.txt",
+    "static/media/about.png": "/blog_react.github.io/static/media/about.3eba56a1.png",
+    "static/media/back_1.png": "/blog_react.github.io/static/media/back_1.a10242f1.png",
+    "static/media/back_2.png": "/blog_react.github.io/static/media/back_2.5a72c4bf.png",
+    "static/media/back_3.png": "/blog_react.github.io/static/media/back_3.0db7b1d8.png",
+    "static/media/Category.css": "/blog_react.github.io/static/media/hero-1.a10242f1.png",
+    "static/media/logo.png": "/blog_react.github.io/static/media/logo.9e341e6e.png",
+    "static/media/ImgSection.css": "/blog_react.github.io/static/media/night_city.2f6f1731.jpg",
+    "static/media/port1.jpg": "/blog_react.github.io/static/media/port1.2e480569.jpg",
+    "static/media/port2.jpg": "/blog_react.github.io/static/media/port2.3a6ceb7d.jpg",
+    "static/media/port3.jpg": "/blog_react.github.io/static/media/port3.de9e306c.jpg",
+    "static/media/port4.jpg": "/blog_react.github.io/static/media/port4.bd2112e1.jpg",
+    "static/media/pp1.jpg": "/blog_react.github.io/static/media/pp1.04fb0647.jpg",
+    "static/media/pp2.jpg": "/blog_react.github.io/static/media/pp2.89c6dbe6.jpg",
+    "static/media/pp4.jpg": "/blog_react.github.io/static/media/pp4.a86b0a1f.jpg",
+    "static/media/user-info.png": "/blog_react.github.io/static/media/user-info.9118f65b.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.68e69e2e.js",
+    "static/css/2.0168826d.chunk.css",
+    "static/js/2.c65898ee.chunk.js",
+    "static/css/main.6e483cd2.chunk.css",
+    "static/js/main.d2b762ea.chunk.js"
+  ]
+}
