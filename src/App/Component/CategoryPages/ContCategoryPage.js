@@ -1,5 +1,5 @@
 import React, { Fragment } from "react"
-import CommentsList from "./Comments/CommentsList"
+// import CommentsList from "./Comments/CommentsList"
 
 
 
@@ -18,7 +18,7 @@ const ContCategoryPage = ({
                         <div className ="views_post">50+ Views <i className="far fa-eye"></i> </div>
                         <div className ="user_post">Mishell<i class="far fa-user"></i></div>
                         <div className="comment_post">
-                            <CommentsList/>
+                            {/* <CommentsList/> */}
                         </div>
                     </div>
                 </div>
