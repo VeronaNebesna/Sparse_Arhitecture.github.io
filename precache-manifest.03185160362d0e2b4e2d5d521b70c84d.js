@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "2bca7433b1bfebce1f67d818e92a19da",
+    "revision": "c052c2c7ad16fbe6c8fe7ac5261b695f",
     "url": "/blog_react.github.io/index.html"
   },
   {
-    "revision": "4f346dfd06daa57c52fa",
+    "revision": "a1c9a20b6bde26b9db99",
     "url": "/blog_react.github.io/static/css/2.0168826d.chunk.css"
   },
   {
-    "revision": "50feb9e1437ea78c6b68",
-    "url": "/blog_react.github.io/static/css/main.6e483cd2.chunk.css"
+    "revision": "b6e4da32e3f32cf984c1",
+    "url": "/blog_react.github.io/static/css/main.33530366.chunk.css"
   },
   {
-    "revision": "4f346dfd06daa57c52fa",
-    "url": "/blog_react.github.io/static/js/2.c65898ee.chunk.js"
+    "revision": "a1c9a20b6bde26b9db99",
+    "url": "/blog_react.github.io/static/js/2.0345edfa.chunk.js"
   },
   {
     "revision": "64bea2e190f27355a76963b8cb94bb7b",
-    "url": "/blog_react.github.io/static/js/2.c65898ee.chunk.js.LICENSE.txt"
+    "url": "/blog_react.github.io/static/js/2.0345edfa.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "50feb9e1437ea78c6b68",
-    "url": "/blog_react.github.io/static/js/main.a4e22db7.chunk.js"
+    "revision": "b6e4da32e3f32cf984c1",
+    "url": "/blog_react.github.io/static/js/main.8bd30b21.chunk.js"
   },
   {
     "revision": "5470fa74182aa70cb09a",
