@@ -9,7 +9,7 @@ import Aos from "aos"
 const PortfolioDarkSection=()=>{
     useEffect(()=>{
         Aos.init({
-            duration:3000
+            duration:1000
         })
         }, [])  
         return(

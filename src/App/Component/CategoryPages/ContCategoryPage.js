@@ -1,5 +1,5 @@
 import React, { Fragment } from "react"
-// import Comments from "./Comments"
+import CommentsList from "./Comments/CommentsList"
 
 
 
@@ -8,7 +8,6 @@ const ContCategoryPage = ({
     id,
     img,
     p1,
-    // isLiked=false
 }) =>{
     return(
         <Fragment>
@@ -18,7 +17,9 @@ const ContCategoryPage = ({
                         <div className="date_post"> 12 Dec, 2020<i class="fas fa-calendar-alt"></i></div>
                         <div className ="views_post">50+ Views <i className="far fa-eye"></i> </div>
                         <div className ="user_post">Mishell<i class="far fa-user"></i></div>
-                        <div className="comment_post">10 Comments<i class="fas fa-comments"></i> </div>
+                        <div className="comment_post">
+                            <CommentsList/>
+                        </div>
                     </div>
                 </div>
                 <div className ="col-xs-12 col-sm-6 col-md-8 col-lg-8">
