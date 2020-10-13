@@ -21,10 +21,7 @@ const Main = ({
             <Route path = "/" exact component={PortfolioDarkSection}/>
             <Route path = "/" exact component={ImgSection}/>
             <Route path="/" exact component={SliderFeddback}/>
-            <Route path ="/category"  exact render ={()=>(
-                 <CategoryPage
-               />
-            )}/> 
+            <Route path ="/category"  exact component={CategoryPage}/> 
             <Route path="/liked_post" component={LikedArticle}/>  
             <Route path="/read_more_about/:arrCategory" exact render={(match)=>(
                 <ReadMore
