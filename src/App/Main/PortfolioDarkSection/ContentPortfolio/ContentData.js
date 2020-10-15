@@ -2,7 +2,7 @@
 const ContentData =[
     {
         id:1,
-        img: "/images/portfolio1.png",
+        img: "images/portfolio1.png",
         headline: "december, 2018",
         p1:"Pure Bedroom Architecture",
         p2:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae fugit dicta odio officia facere, quos reiciendis. Molestiae fugit dicta.",
@@ -20,7 +20,7 @@ const ContentData =[
     },
     {
         id:2,
-        img: "/images/portfolio2.png",
+        img: "images/portfolio2.png",
         headline: "december, 2018",
         p1:"Сalm Style Of Architecture",
         category:" Architectural minimalism",
@@ -38,7 +38,7 @@ const ContentData =[
     },
     {
         id:3,
-        img: "/images/portfolio3.png",
+        img: "images/portfolio3.png",
         headline: "december, 2018",
         p1:"Digitally generated architecture",
         p2:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae fugit dicta odio officia facere, quos reiciendis. Molestiae fugit dicta.",
@@ -57,7 +57,7 @@ const ContentData =[
     },
     {
         id:4,
-        img: "/images/portfolio4.png",
+        img: "images/portfolio4.png",
         headline: "december, 2018",
         p1:"Modern Architecture",
         category:" Architectural minimalism",
@@ -76,7 +76,7 @@ const ContentData =[
     },
     {
         id:5,
-        img: "/images/portfolio5.png",
+        img: "images/portfolio5.png",
         headline: "december, 2018",
         p1:"Digitally generated architecture",
         category:" Digital architecture",
@@ -95,7 +95,7 @@ const ContentData =[
     },
     {
         id:6,
-        img: "/images/portfolio6.png",
+        img: "images/portfolio6.png",
         headline: "december, 2018",
         p1:"Postmodern Architecture",
         category:" Deconstructivism",
@@ -114,7 +114,7 @@ const ContentData =[
     },
     {
         id:7,
-        img: "/images/portfolio7.png",
+        img: "images/portfolio7.png",
         headline: "december, 2018",
         p1:"Functional Architecture",
         category:" Hi-tech",
